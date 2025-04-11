@@ -53,7 +53,7 @@ async def get_user(user_id: str):
     if not user_id.isdigit():
         raise HTTPException(status_code=400, detail="O ID de usuário fornecido não é válido.")
     
-    if user_id != "123":
+    if user_id != "1234":
         raise HTTPException(status_code=404, detail="Usuário não encontrado.")
     
     try:
